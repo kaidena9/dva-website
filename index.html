@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="DVA builds custom homes, major remodels, and detailed interior work with a focus on proportion, material, and execution." />
+  <title>DVA — Construction & Remodeling</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400&family=Inter:wght@400;500&display=swap" />
+
+  <link rel="preload" as="image" href="images/hero.jpeg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand" aria-label="DVA — Home">DVA</a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#craft">Craft</a>
+        <a href="#studio">Studio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="#contact" class="nav__cta">Get a Quote</a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ─────────── HERO ─────────── -->
+    <section class="hero">
+      <div class="hero__media">
+        <img src="images/hero.jpeg" alt="A custom-built two-story home at twilight, warm lights glowing from the windows beneath a pastel sky." />
+        <div class="hero__scrim" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero__content">
+        <span class="hero__eyebrow">Construction &amp; Remodeling</span>
+        <h1 class="hero__title">Built well.<br />Made to last.</h1>
+        <p class="hero__body">DVA builds custom homes, major remodels, and detailed interior work with a focus on proportion, material, and execution.</p>
+        <div class="hero__ctas">
+          <a href="#contact" class="btn">Get a Quote</a>
+          <a href="#services" class="link-arrow link-arrow--light">View Work <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────── STUDIO ─────────── -->
+    <section class="studio" id="studio" data-reveal>
+      <div class="studio__inner">
+        <span class="eyebrow">01 — Studio</span>
+        <p class="studio__body">DVA works with homeowners, architects, and designers on homes that require careful planning, steady execution, and a high level of finish. We keep the project load small so each job gets real attention from start to closeout.</p>
+      </div>
+    </section>
+
+    <!-- ─────────── SERVICES ─────────── -->
+    <section class="services" id="services">
+      <header class="services__head" data-reveal>
+        <span class="eyebrow">02 — Services</span>
+        <h2 class="section-title">A focused studio.<br />A narrow project list.</h2>
+        <p class="lede">We take on a limited number of projects each year so the work stays hands-on, coordinated, and built to a high standard.</p>
+      </header>
+
+      <figure class="services__media" data-reveal>
+        <img src="images/kitchen.jpeg" alt="A custom kitchen with white inset cabinetry, walnut millwork, brass hardware, and book-matched marble." />
+      </figure>
+
+      <ul class="services__list" data-reveal>
+        <li>
+          <h3>Custom Homes</h3>
+          <p>Ground-up homes built in coordination with the architect, from early planning through final detail.</p>
+        </li>
+        <li>
+          <h3>Whole-Home Remodels</h3>
+          <p>Full-scale renovations that improve how a house works without losing what gives it character.</p>
+        </li>
+        <li>
+          <h3>Kitchens &amp; Baths</h3>
+          <p>Cabinetry, stone, fixtures, and finish work handled with close attention to fit, layout, and use.</p>
+        </li>
+        <li>
+          <h3>Additions &amp; Outdoor</h3>
+          <p>Additions, exterior spaces, and supporting structures designed to feel native to the home.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ─────────── CRAFT ─────────── -->
+    <section class="craft" id="craft">
+      <figure class="craft__media" data-reveal>
+        <img src="images/bathroom.jpeg" alt="A primary bathroom with walnut vanity, marble counters, freestanding tub, blackened-steel fixtures, and terrazzo flooring." />
+      </figure>
+
+      <div class="craft__copy" data-reveal>
+        <span class="eyebrow">03 — Craft</span>
+        <h2 class="section-title">The work shows in the finish.</h2>
+        <p class="lede">Good construction is felt in the alignment, the weight of the door, the way light lands on a surface, and how materials meet over time. We pay attention to the parts that hold up after the photos are taken.</p>
+
+        <dl class="craft__list">
+          <div>
+            <dt>Stone &amp; Surface</dt>
+            <dd>Material selection, slab layout, and finish decisions handled with the same care as the build itself.</dd>
+          </div>
+          <div>
+            <dt>Millwork</dt>
+            <dd>Cabinetry and trim detailed for proportion, durability, and clean installation.</dd>
+          </div>
+          <div>
+            <dt>Lighting &amp; Plumbing</dt>
+            <dd>Fixtures and finish elements chosen to support the architecture, not compete with it.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ─────────── CTA ─────────── -->
+    <section class="cta" id="contact" data-reveal>
+      <div class="cta__inner">
+        <span class="eyebrow">04 — Begin</span>
+        <h2 class="cta__title">Tell us about your project.</h2>
+        <p class="cta__body">If you are planning a custom home, major remodel, or a focused interior scope, we can talk through fit, timeline, and next steps.</p>
+
+        <a href="mailto:studio@dva.build" class="cta__mail">
+          <span>studio@dva.build</span>
+          <span class="cta__arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a href="mailto:studio@dva.build?subject=Studio%20Visit" class="link-arrow cta__secondary">Request a Visit <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─────────── FOOTER ─────────── -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__cols">
+        <div class="footer__brandcol">
+          <span class="footer__mark">DVA</span>
+          <span class="footer__label-tag">Construction &amp; Remodeling</span>
+        </div>
+        <div>
+          <span class="footer__label">Studio</span>
+          <p>By appointment only<br />Studio visits available</p>
+        </div>
+        <div>
+          <span class="footer__label">Contact</span>
+          <p>
+            <a href="mailto:studio@dva.build">studio@dva.build</a><br />
+            <a href="#contact">Schedule a consultation</a>
+          </p>
+        </div>
+        <div>
+          <span class="footer__label">Practice</span>
+          <p>Licensed &amp; Insured<br />Bonded General Contractor</p>
+        </div>
+      </div>
+
+      <div class="footer__base">
+        <span>© <span id="year"></span> DVA Build, Inc.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
