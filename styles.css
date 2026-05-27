@@ -285,11 +285,11 @@ ul, ol { padding: 0; list-style: none; }
 .hero__title {
   font-family: var(--ff-display);
   font-weight: 300;
-  font-size: clamp(44px, 7vw, 88px);
-  line-height: 1.02;
+  font-size: clamp(40px, 6vw, 76px);
+  line-height: 1.04;
   letter-spacing: -0.018em;
   margin-top: 20px;
-  max-width: 14ch;
+  max-width: 28ch;
   animation: fadeUp 1.1s var(--ease-out) .45s both;
 }
 
