@@ -687,7 +687,7 @@ ul, ol { padding: 0; list-style: none; }
 }
 .nav__dropdown {
   position: absolute;
-  top: calc(100% + 14px);
+  top: calc(100% + 2px);
   left: 50%;
   transform: translateX(-50%);
   background: #fff;
