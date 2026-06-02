@@ -1,7 +1,3 @@
-﻿/* ─────────────────────────────────────────────────────────
-   DVA — script.js
-   ───────────────────────────────────────────────────────── */
-
 document.documentElement.classList.add('js');
 
 /* ── Nav scroll state ── */
@@ -16,85 +12,61 @@ if (toggle) {
   toggle.addEventListener('click', () => {
     const isOpen = nav.classList.toggle('is-open');
     toggle.setAttribute('aria-expanded', isOpen);
-    if (!isOpen) closeMega();
   });
 }
 
+/* Close mobile menu on nav link tap */
 document.querySelectorAll('.nav__links a:not(.nav__mega-trigger)').forEach(link => {
   link.addEventListener('click', () => {
     nav.classList.remove('is-open');
     if (toggle) toggle.setAttribute('aria-expanded', 'false');
-    closeMega();
   });
 });
 
-/* ── Mega menu ── */
+/* ── Services dropdown ── */
 const servicesNav = document.getElementById('servicesNav');
 const servicesTrigger = document.getElementById('servicesTrigger');
-const megaMenu = document.getElementById('megaMenu');
+const dropdown = document.getElementById('servicesDropdown');
 
-function openMega() {
-  if (!megaMenu) return;
-  servicesNav.classList.add('is-open');
-  servicesTrigger.setAttribute('aria-expanded', 'true');
-  megaMenu.removeAttribute('hidden');
-}
+if (servicesTrigger && dropdown) {
 
-function closeMega() {
-  if (!megaMenu) return;
-  servicesNav.classList.remove('is-open');
-  servicesTrigger.setAttribute('aria-expanded', 'false');
-  megaMenu.setAttribute('hidden', '');
-}
-
-function toggleMega() {
-  servicesNav.classList.contains('is-open') ? closeMega() : openMega();
-}
-
-if (servicesTrigger && megaMenu) {
-  let hoverTimer;
-  const isMobile = () => window.innerWidth <= 960;
-
+  /* Hover on desktop */
   servicesNav.addEventListener('mouseenter', () => {
-    if (isMobile()) return;
-    clearTimeout(hoverTimer);
-    openMega();
+    dropdown.removeAttribute('hidden');
+    servicesTrigger.setAttribute('aria-expanded', 'true');
   });
   servicesNav.addEventListener('mouseleave', () => {
-    if (isMobile()) return;
-    hoverTimer = setTimeout(closeMega, 120);
-  });
-  megaMenu.addEventListener('mouseenter', () => {
-    if (isMobile()) return;
-    clearTimeout(hoverTimer);
-  });
-  megaMenu.addEventListener('mouseleave', () => {
-    if (isMobile()) return;
-    hoverTimer = setTimeout(closeMega, 120);
+    dropdown.setAttribute('hidden', '');
+    servicesTrigger.setAttribute('aria-expanded', 'false');
   });
 
+  /* Click toggle */
   servicesTrigger.addEventListener('click', (e) => {
     e.preventDefault();
-    const dropdown = document.getElementById('servicesDropdown');
-    if (dropdown) {
-      const isHidden = dropdown.hasAttribute('hidden');
-      if (isHidden) { dropdown.removeAttribute('hidden'); } else { dropdown.setAttribute('hidden', ''); }
+    const isHidden = dropdown.hasAttribute('hidden');
+    if (isHidden) {
+      dropdown.removeAttribute('hidden');
+      servicesTrigger.setAttribute('aria-expanded', 'true');
+    } else {
+      dropdown.setAttribute('hidden', '');
+      servicesTrigger.setAttribute('aria-expanded', 'false');
     }
-    toggleMega();
   });
 
-  servicesTrigger.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleMega(); }
-    if (e.key === 'Escape') closeMega();
-  });
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeMega();
-  });
+  /* Close on outside click */
   document.addEventListener('click', (e) => {
-    if (!servicesNav.contains(e.target) && !megaMenu.contains(e.target)) closeMega();
+    if (!servicesNav.contains(e.target)) {
+      dropdown.setAttribute('hidden', '');
+      servicesTrigger.setAttribute('aria-expanded', 'false');
+    }
   });
-  megaMenu.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') { closeMega(); servicesTrigger.focus(); }
+
+  /* Close on Escape */
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      dropdown.setAttribute('hidden', '');
+      servicesTrigger.setAttribute('aria-expanded', 'false');
+    }
   });
 }
 
