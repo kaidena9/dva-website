@@ -868,4 +868,33 @@ ul, ol { padding: 0; list-style: none; }
     font-size: 13px;
   }
   .nav__mega-trigger::after { display: none; }
+
+/* ── Simple Services Dropdown ── */
+.nav__dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid var(--c-rule);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+  min-width: 180px;
+  z-index: 100;
+  padding: 8px 0;
+}
+.nav__dropdown[hidden] { display: none; }
+.nav__dropdown a {
+  display: block;
+  padding: 12px 20px;
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--c-ink);
+  transition: background .2s var(--ease);
+}
+.nav__dropdown a:hover { background: var(--c-bg-warm); }
+
+.nav__item--has-mega {
+  position: relative;
+}
 }

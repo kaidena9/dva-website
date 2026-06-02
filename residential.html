@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="DVA Contracting Inc residential services — kitchens, bathrooms, and flooring built with expert craftsmanship." />
+<title>Residential Services | DVA Contracting Inc</title>
+<link rel="canonical" href="https://www.dvacontractinginc.com/residential.html" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400&family=Inter:wght@400;500&display=swap" />
+<link rel="stylesheet" href="styles.css" />
+<style>
+.page-hero {
+  padding: clamp(140px, 18vh, 200px) 0 clamp(64px, 8vh, 96px);
+  background: var(--c-bg-warm);
+  border-bottom: 1px solid var(--c-rule);
+}
+.page-hero__inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+.page-hero__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--c-mute);
+  margin-bottom: 32px;
+  transition: color .25s var(--ease);
+}
+.page-hero__back:hover { color: var(--c-ink); }
+.res-section {
+  padding: clamp(80px, 11vh, 128px) 0;
+  border-bottom: 1px solid var(--c-rule);
+}
+.res-section:last-of-type { border-bottom: none; }
+.res-section:nth-child(even) { background: var(--c-bg-warm); }
+.res-section__inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+.res-section__head {
+  margin-bottom: clamp(40px, 6vh, 64px);
+  max-width: 640px;
+}
+.res-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(16px, 2vw, 24px);
+}
+.res-grid__item {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.res-grid__img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+.res-grid__label {
+  font-family: var(--ff-display);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--c-ink);
+  letter-spacing: -0.003em;
+}
+.res-grid__desc {
+  font-size: 13.5px;
+  color: var(--c-mute);
+  line-height: 1.6;
+  margin-top: -6px;
+}
+.res-cta {
+  padding: clamp(80px, 11vh, 128px) 0;
+  background: var(--c-bg-warm);
+  border-top: 1px solid var(--c-rule);
+  text-align: center;
+}
+.res-cta__inner {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+.res-cta__title {
+  font-family: var(--ff-display);
+  font-weight: 300;
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1.08;
+  letter-spacing: -0.015em;
+  color: var(--c-ink);
+  margin-top: 16px;
+}
+.res-cta__body {
+  margin-top: 20px;
+  color: var(--c-mute);
+  font-size: 16px;
+  line-height: 1.65;
+}
+.res-cta__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 40px;
+  font-family: var(--ff-display);
+  font-weight: 300;
+  font-size: clamp(22px, 2.8vw, 36px);
+  letter-spacing: -0.01em;
+  color: var(--c-ink);
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--c-ink);
+  transition: color .25s var(--ease), border-color .25s var(--ease);
+}
+.res-cta__link:hover { color: var(--c-mute); border-color: var(--c-mute); }
+@media (max-width: 960px) {
+  .res-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 520px) {
+  .res-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand" aria-label="DVA — Home">DVA</a>
+    <nav class="nav__links" aria-label="Primary">
+      <div class="nav__item nav__item--has-mega" id="servicesNav">
+        <a href="#" class="nav__mega-trigger" aria-haspopup="true" aria-expanded="false" id="servicesTrigger">
+          Services
+          <svg class="nav__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <div class="nav__dropdown" id="servicesDropdown" hidden>
+          <a href="residential.html">Residential</a>
+          <a href="commercial.html">Commercial</a>
+        </div>
+      </div>
+      <a href="index.html#craft">Craft</a>
+      <a href="index.html#approach">Approach</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a href="index.html#contact" class="nav__cta">Get a Quote</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <div class="page-hero">
+    <div class="page-hero__inner">
+      <a href="index.html" class="page-hero__back">&#8592; Back to Home</a>
+      <span class="eyebrow">Residential</span>
+      <h1 class="section-title">Work built for how<br />people actually live.</h1>
+      <p class="lede">Kitchens, bathrooms, and flooring handled with the same care as the larger build — because the details are what you notice every day.</p>
+    </div>
+  </div>
+
+  <!-- KITCHENS -->
+  <section class="res-section" id="kitchens">
+    <div class="res-section__inner">
+      <div class="res-section__head">
+        <span class="eyebrow">01 &#8212; Kitchens</span>
+        <h2 class="section-title">Cabinetry, stone,<br />and layout done right.</h2>
+        <p class="lede">Islands, custom cabinetry, stone surfaces, and fixtures selected for daily use and long-term durability.</p>
+      </div>
+      <div class="res-grid">
+        <div class="res-grid__item">
+          <img class="res-grid__img" src="images/kitchen.jpeg" alt="Kitchen remodel with quartz island and brass pendants" />
+          <p class="res-grid__label">Quartz Island &amp; Custom Cabinetry</p>
+          <p class="res-grid__desc">Full kitchen renovation with oversized quartz island, custom grey cabinetry, and brass pendant lighting.</p>
+        </div>
+        <div class="res-grid__item">
+          <img class="res-grid__img" src="images/res_kitchen.jpg" alt="Kitchen remodel with white cabinetry and quartz counters" />
+          <p class="res-grid__label">White Shaker Kitchen</p>
+          <p class="res-grid__desc">White shaker cabinetry, quartz countertops, and stainless appliances in a bright open layout.</p>
+        </div>
+        <div class="res-grid__item">
+          <img class="res-grid__img" src="images/res_kitchen_2.jpg" alt="Kitchen with grey cabinetry and quartz island" />
+          <p class="res-grid__label">Grey Shaker &amp; Stone</p>
+          <p class="res-grid__desc">Grey shaker cabinetry with quartz island, zellige tile backsplash, and professional range.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BATHROOMS -->
+  <section class="res-section" id="bathrooms">
+    <div class="res-section__inner">
+      <div class="res-section__head">
+        <span class="eyebrow">02 &#8212; Bathrooms</span>
+        <h2 class="section-title">Tile, fixtures, and<br />finish work that holds up.</h2>
+        <p class="lede">Vanities, tilework, freestanding tubs, and glass enclosures installed with close attention to fit and proportion.</p>
+      </div>
+      <div class="res-grid">
+        <div class="res-grid__item">
+          <img class="res-grid__img" src="images/bathroom.jpeg" alt="Bathroom with custom vanity and geometric tile floor" />
+          <p class="res-grid__label">Custom Vanity &amp; Geometric Tile</p>
+          <p class="res-grid__desc">Dark walnut vanity, quartz countertop, glass shower enclosure, and custom geometric floor tile.</p>
+        </div>
+        <div class="res-grid__item">
+          <img class="res-grid__img" src="images/res_bathroom.jpg" alt="Master bathroom with freestanding tub and marble tile" />
+          <p class="res-grid__label">Freestanding Tub &amp; Marble</p>
+          <p class="res-grid__desc">Master bath with polished marble tile, freestanding soaking tub, and custom white cabinetry.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOORING -->
+  <section class="res-section" id="flooring">
+    <div class="res-section__inner">
+      <div class="res-section__head">
+        <span class="eyebrow">03 &#8212; Flooring</span>
+        <h2 class="section-title">Hardwood and LVP<br />installed to last.</h2>
+        <p class="lede">Hardwood, luxury vinyl plank, and tile flooring installed with precision — straight lines, clean transitions, and proper subfloor preparation.</p>
+      </div>
+      <div class="res-grid">
+        <div class="res-grid__item">
+          <img class="res-grid__img" src="images/flooring_2.jpg" alt="Light luxury vinyl plank flooring in finished basement" />
+          <p class="res-grid__label">Luxury Vinyl Plank</p>
+          <p class="res-grid__desc">Light wide-plank LVP throughout a finished basement — clean, durable, and water resistant.</p>
+        </div>
+        <div class="res-grid__item">
+          <img class="res-grid__img" src="images/flooring_3.jpg" alt="Dark hardwood flooring in residential living room" />
+          <p class="res-grid__label">Hardwood Flooring</p>
+          <p class="res-grid__desc">Dark hardwood installed throughout main living areas with clean transitions and consistent finish.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="res-cta">
+    <div class="res-cta__inner">
+      <span class="eyebrow">Start a Project</span>
+      <h2 class="res-cta__title">Ready to get started?</h2>
+      <p class="res-cta__body">Tell David about your project. He reads every inquiry personally and replies within two business days.</p>
+      <a href="mailto:info@dvacontractinginc.com" class="res-cta__link">
+        info@dvacontractinginc.com <span aria-hidden="true">&#8594;</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__cols">
+      <div class="footer__brandcol">
+        <span class="footer__mark">DVA</span>
+        <span class="footer__label-tag">Construction &amp; Remodeling</span>
+      </div>
+      <div>
+        <span class="footer__label">Phone</span>
+        <p><a href="tel:+16308868628">630-886-8628</a><br />Direct line to David or the team</p>
+      </div>
+      <div>
+        <span class="footer__label">Email</span>
+        <p><a href="mailto:info@dvacontractinginc.com">info@dvacontractinginc.com</a><br />Read by David personally</p>
+      </div>
+      <div>
+        <span class="footer__label">Practice</span>
+        <p>Licensed &amp; Insured<br />Bonded General Contractor</p>
+      </div>
+    </div>
+    <div class="footer__base">
+      <span>&#169; <span id="year"></span> DVA Contracting Inc.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
