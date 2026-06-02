@@ -75,6 +75,11 @@ if (servicesTrigger && megaMenu) {
 
   servicesTrigger.addEventListener('click', (e) => {
     e.preventDefault();
+    const dropdown = document.getElementById('servicesDropdown');
+    if (dropdown) {
+      const isHidden = dropdown.hasAttribute('hidden');
+      if (isHidden) { dropdown.removeAttribute('hidden'); } else { dropdown.setAttribute('hidden', ''); }
+    }
     toggleMega();
   });
 
