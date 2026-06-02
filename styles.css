@@ -1,8 +1,8 @@
-/* ─────────────────────────────────────────────────────────
-   DVA — Construction & Remodeling
+﻿/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+   DVA â€” Construction & Remodeling
    Architectural restraint. Black, white, and warm neutral.
    No theatrical italics. No accent-color emphasis. No card grids.
-   ───────────────────────────────────────────────────────── */
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 :root {
   --c-bg:        #FFFFFF;
@@ -24,7 +24,7 @@
   --ease-out:    cubic-bezier(.16, 1, .3, 1);
 }
 
-/* ───── Reset / Base ───── */
+/* â”€â”€â”€â”€â”€ Reset / Base â”€â”€â”€â”€â”€ */
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 body {
@@ -48,7 +48,7 @@ ul, ol { padding: 0; list-style: none; }
 
 ::selection { background: var(--c-ink); color: var(--c-bg); }
 
-/* ───── Section eyebrow + titles ───── */
+/* â”€â”€â”€â”€â”€ Section eyebrow + titles â”€â”€â”€â”€â”€ */
 .eyebrow {
   display: inline-block;
   font-family: var(--ff-body);
@@ -77,7 +77,7 @@ ul, ol { padding: 0; list-style: none; }
   max-width: 52ch;
 }
 
-/* ───── Button + arrow link ───── */
+/* â”€â”€â”€â”€â”€ Button + arrow link â”€â”€â”€â”€â”€ */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -126,9 +126,9 @@ ul, ol { padding: 0; list-style: none; }
 .link-arrow:hover span { transform: translateX(3px); }
 .link-arrow--light { color: #fff; }
 
-/* ─────────────────────────────────────────────────────────
+/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
    NAV
-   ───────────────────────────────────────────────────────── */
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .nav {
   position: fixed;
   inset: 0 0 auto 0;
@@ -231,9 +231,9 @@ ul, ol { padding: 0; list-style: none; }
 .nav.is-open .nav__toggle span:nth-child(1) { top: 11px; transform: rotate(45deg); }
 .nav.is-open .nav__toggle span:nth-child(2) { top: 11px; transform: rotate(-45deg); }
 
-/* ─────────────────────────────────────────────────────────
+/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
    HERO
-   ───────────────────────────────────────────────────────── */
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .hero {
   position: relative;
   min-height: 100svh;
@@ -311,9 +311,9 @@ ul, ol { padding: 0; list-style: none; }
   animation: fadeUp 1.1s var(--ease-out) .85s both;
 }
 
-/* ─────────────────────────────────────────────────────────
+/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
    STUDIO (intro)
-   ───────────────────────────────────────────────────────── */
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .studio {
   padding: clamp(96px, 13vh, 160px) 0 clamp(80px, 11vh, 132px);
   background: var(--c-bg);
@@ -334,9 +334,9 @@ ul, ol { padding: 0; list-style: none; }
   max-width: 36ch;
 }
 
-/* ─────────────────────────────────────────────────────────
+/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
    SERVICES
-   ───────────────────────────────────────────────────────── */
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .services {
   padding: clamp(96px, 12vh, 144px) 0 clamp(96px, 12vh, 144px);
   background: var(--c-bg-warm);
@@ -391,9 +391,9 @@ ul, ol { padding: 0; list-style: none; }
   max-width: 46ch;
 }
 
-/* ─────────────────────────────────────────────────────────
-   CRAFT — asymmetric split, image flush to edge
-   ───────────────────────────────────────────────────────── */
+/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+   CRAFT â€” asymmetric split, image flush to edge
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .craft {
   background: var(--c-bg);
   display: grid;
@@ -448,9 +448,9 @@ ul, ol { padding: 0; list-style: none; }
   max-width: 50ch;
 }
 
-/* ─────────────────────────────────────────────────────────
-   CTA — typographic close
-   ───────────────────────────────────────────────────────── */
+/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+   CTA â€” typographic close
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .cta {
   padding: clamp(96px, 14vh, 160px) 0 clamp(120px, 16vh, 180px);
   background: var(--c-bg-warm);
@@ -507,9 +507,9 @@ ul, ol { padding: 0; list-style: none; }
   padding-left: 0;
 }
 
-/* ─────────────────────────────────────────────────────────
+/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
    FOOTER
-   ───────────────────────────────────────────────────────── */
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .footer {
   background: var(--c-bg);
   color: var(--c-ink-soft);
@@ -578,9 +578,9 @@ ul, ol { padding: 0; list-style: none; }
   color: var(--c-mute-2);
 }
 
-/* ─────────────────────────────────────────────────────────
+/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
    REVEAL (JS-gated so the page stays visible without JS)
-   ───────────────────────────────────────────────────────── */
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .js [data-reveal] {
   opacity: 0;
   transform: translateY(22px);
@@ -597,9 +597,9 @@ ul, ol { padding: 0; list-style: none; }
   to   { opacity: 1; transform: none; }
 }
 
-/* ─────────────────────────────────────────────────────────
+/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
    RESPONSIVE
-   ───────────────────────────────────────────────────────── */
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 960px) {
   .nav__links { display: none; }
   .nav__cta { display: none; }
@@ -654,21 +654,16 @@ ul, ol { padding: 0; list-style: none; }
   .footer__mark { font-size: 36px; }
 }
 
-/* ───── Reduced Motion ───── */
+/* â”€â”€â”€â”€â”€ Reduced Motion â”€â”€â”€â”€â”€ */
 @media (prefers-reduced-motion: reduce) {
   * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
   .js [data-reveal] { opacity: 1; transform: none; }
 }
 
-/* ─────────────────────────────────────────────────────────
-   MEGA MENU
-   ───────────────────────────────────────────────────────── */
-
-.nav__item {
-  position: static;
-}
+/* ── Services Dropdown ── */
 .nav__item--has-mega {
-  display: flex;
+  position: relative;
+  display: inline-flex;
   align-items: center;
 }
 .nav__mega-trigger {
@@ -679,207 +674,27 @@ ul, ol { padding: 0; list-style: none; }
   letter-spacing: 0.16em;
   text-transform: uppercase;
   font-weight: 500;
-  position: relative;
   padding: 6px 0;
   opacity: 0.9;
   transition: opacity .25s var(--ease);
   cursor: pointer;
-}
-.nav__mega-trigger::after {
-  content: "";
-  position: absolute;
-  left: 0; right: 18px; bottom: 0;
-  height: 1px;
-  background: currentColor;
-  transform: scaleX(0);
-  transform-origin: left center;
-  transition: transform .35s var(--ease);
+  position: relative;
 }
 .nav__mega-trigger:hover { opacity: 1; }
-.nav__mega-trigger:hover::after,
-.nav__item--has-mega.is-open .nav__mega-trigger::after { transform: scaleX(1); }
-
 .nav__chevron {
   transition: transform .3s var(--ease);
   flex-shrink: 0;
 }
-.nav__item--has-mega.is-open .nav__chevron {
-  transform: rotate(180deg);
-}
-
-.mega {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: #fff;
-  border-bottom: 1px solid var(--c-rule);
-  box-shadow: 0 24px 64px rgba(0,0,0,0.09);
-  z-index: 49;
-  padding-top: 80px;
-  opacity: 0;
-  transform: translateY(-8px);
-  transition: opacity .3s var(--ease-out), transform .3s var(--ease-out);
-  pointer-events: none;
-}
-.mega:not([hidden]) {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-}
-.mega[hidden] {
-  display: block;
-}
-.mega__inner {
-  max-width: var(--max);
-  margin: 0 auto;
-  padding: 48px var(--gutter) 52px;
-  display: grid;
-  grid-template-columns: 220px 1fr 1fr;
-  gap: clamp(32px, 5vw, 72px);
-}
-.mega__intro {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding-right: 24px;
-  border-right: 1px solid var(--c-rule);
-}
-.mega__tagline {
-  font-family: var(--ff-display);
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 1.4;
-  letter-spacing: -0.005em;
-  color: var(--c-ink);
-  margin-top: 8px;
-}
-.mega__all {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--c-mute);
-  margin-top: auto;
-  padding-top: 24px;
-  border-top: 1px solid var(--c-rule);
-  transition: color .25s var(--ease);
-}
-.mega__all:hover { color: var(--c-ink); }
-.mega__col-label {
-  display: block;
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--c-mute-2);
-  padding-bottom: 16px;
-  border-bottom: 1px solid var(--c-rule);
-  margin-bottom: 4px;
-}
-.mega__list {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-.mega__item {
-  display: grid;
-  grid-template-columns: 56px 1fr;
-  gap: 14px;
-  align-items: center;
-  padding: 14px 0;
-  border-bottom: 1px solid var(--c-rule);
-  transition: background .2s var(--ease);
-  color: var(--c-ink-soft);
-}
-.mega__item:last-child { border-bottom: none; }
-.mega__item-img {
-  width: 56px;
-  height: 44px;
-  background-size: cover;
-  background-position: center;
-  flex-shrink: 0;
-  transition: opacity .3s var(--ease);
-}
-.mega__item:hover .mega__item-img { opacity: 0.8; }
-.mega__item-copy {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-}
-.mega__item-copy strong {
-  font-family: var(--ff-display);
-  font-weight: 400;
-  font-size: 15px;
-  letter-spacing: -0.003em;
-  color: var(--c-ink);
-  transition: color .2s var(--ease);
-}
-.mega__item-copy span {
-  font-size: 12.5px;
-  line-height: 1.5;
-  color: var(--c-mute);
-}
-
-@media (max-width: 960px) {
-  .mega {
-    position: static;
-    box-shadow: none;
-    border-bottom: none;
-    padding-top: 0;
-    background: transparent;
-    transform: none;
-    opacity: 1;
-    pointer-events: auto;
-  }
-  .mega[hidden] { display: none; }
-  .mega__inner {
-    grid-template-columns: 1fr;
-    padding: 0 0 8px 0;
-    gap: 0;
-  }
-  .mega__intro { display: none; }
-  .mega__col-label {
-    font-size: 10px;
-    padding: 10px 0 8px;
-    margin-top: 4px;
-  }
-  .mega__item {
-    grid-template-columns: 40px 1fr;
-    gap: 10px;
-    padding: 10px 0;
-  }
-  .mega__item-img { width: 40px; height: 32px; }
-  .mega__item-copy strong { font-size: 13.5px; }
-  .mega__item-copy span { display: none; }
-  .nav__item--has-mega {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-  }
-  .nav__mega-trigger {
-    width: 100%;
-    justify-content: space-between;
-    padding: 14px 0;
-    border-bottom: 1px solid var(--c-rule);
-    font-size: 13px;
-  }
-  .nav__mega-trigger::after { display: none; }
-
-/* ── Simple Services Dropdown ── */
 .nav__dropdown {
   position: absolute;
-  top: calc(100% + 10px);
+  top: calc(100% + 14px);
   left: 50%;
   transform: translateX(-50%);
   background: #fff;
   border: 1px solid var(--c-rule);
   box-shadow: 0 8px 32px rgba(0,0,0,0.08);
-  min-width: 180px;
-  z-index: 100;
+  min-width: 160px;
+  z-index: 200;
   padding: 8px 0;
 }
 .nav__dropdown[hidden] { display: none !important; }
@@ -895,9 +710,3 @@ ul, ol { padding: 0; list-style: none; }
 }
 .nav__dropdown a:hover { background: var(--c-bg-warm); }
 
-.nav__item--has-mega {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-}
-}
